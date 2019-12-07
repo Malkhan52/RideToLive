@@ -1,0 +1,27 @@
+{
+    "startingSpeed" : 45,
+    "sequences": {
+        "loop-1": {
+            "jpegSequence": {
+                "location": "sequences/intro/blurred",
+                "prefix": "video",
+                "numFrames": 77,
+                "frameRate": 25
+            },
+            "videoFilename": "sequences/intro/blurred",
+            "winSequence": "loop-2",
+            "failSequence": "loop-2"
+        },
+        "loop-2": {
+            "jpegSequence": {
+                "location": "sequences/intro/blurred",
+                "prefix": "video",
+                "numFrames": 77,
+                "frameRate": 25
+            },
+            "videoFilename": "sequences/intro/blurred",
+            "winSequence": "loop-1",
+            "failSequence": "loop-1"
+        }
+    }
+}

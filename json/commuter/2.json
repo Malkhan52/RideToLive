@@ -1,0 +1,116 @@
+{
+    "startingSpeed" : 50,
+    "sequences": {
+        "intro": {
+            "jpegSequence": {
+                "location": "sequences/commuter/2/intro",
+                "prefix": "video",
+                "numFrames": 129,
+                "frameRate": 25
+            },
+            "videoFilename": "sequences/commuter/2/intro",
+            "winSequence": "pass-1",
+            "failSequence": "fail-1",
+            "action": {
+                "type": "choice",
+                "start": 0.753846154,
+                "end": 1,
+                "correct": "b"
+            },
+            "speedLimits" : [
+                {"start": 0, "speed": 50}
+            ]
+        },
+        "pass-1": {
+            "jpegSequence": {
+                "location" : "sequences/commuter/2/pass-1",
+                "prefix" : "video",
+                "numFrames" : 338,
+                "frameRate" : 25
+            },
+            "videoFilename" : "sequences/commuter/2/pass-1",
+            "winSequence" : "pass-2",
+            "failSequence" : "fail-2",
+            "action": {
+                "type": "tap-brake",
+                "start": 0.81120944,
+                "end": 1
+            },
+            "speedLimits": [
+                {"start": 0, "speed": 50}
+            ],
+            "advisorySpeedLimits": [
+                {"start": 0.625368732, "speed": 25},
+                {"start": 0.769911504, "speed": "x"}
+            ],
+            "messageFast": [
+                "Well done.",
+                "Good control and awareness."
+            ],
+            "messageSlow": [
+                "Good choice.",
+                "Could've been quicker though."
+            ]
+        },
+        "fail-1" : {
+            "jpegSequence" : {
+                "location" : "sequences/commuter/2/fail-1",
+                "prefix" : "video",
+                "numFrames" : 79,
+                "frameRate" : 25
+            },
+            "videoFilename" : "sequences/commuter/2/fail-1",
+            "winSequence" : null,
+            "failSequence" : null,
+            "speedLimits": [
+                {"start": 0, "speed": 50}
+            ],
+            "messageFast": [
+                "Try again!",
+                "That could've been serious."
+            ],
+            "messageSlow": [
+                "Whoa!",
+                "Might want to try that again!"
+            ]
+        },
+        "pass-2": {
+            "jpegSequence" : {
+                "location" : "sequences/commuter/2/pass-2",
+                "prefix" : "video",
+                "numFrames": 129,
+                "frameRate": 25
+            },
+            "videoFilename" : "sequences/commuter/2/pass-2",
+            "winSequence": null,
+            "failSequence" : null,
+            "speedLimits" : [
+                {"start": 0, "speed": 50}
+            ],
+            "messageFast" : ["Well done", "Good control and awareness."],
+            "messageSlow" : ["Well done", "Good control and awareness."]
+        },
+        "fail-2": {
+            "jpegSequence" : {
+                "location": "sequences/commuter/2/fail-2",
+                "prefix": "video",
+                "numFrames": 62,
+                "frameRate": 25
+            },
+            "videoFilename": "sequences/commuter/2/fail-2",
+            "winSequence": null,
+            "failSequence": null,
+            "speedLimits" : [
+                {"start": 0, "speed": 50}
+            ],
+            "messageFast": [
+                "Try again!",
+                "That could've been serious."
+            ],
+            "messageSlow": [
+                "Whoa!",
+                "Might want to try that again!"
+            ]
+        }
+    }
+}
